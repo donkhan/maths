@@ -46,9 +46,26 @@ def solve_t3():
     print(s)
 
 
+def solve():
+    n = int(input("Enter the No of equations "))
+    mat = []
+    v = []
+    for i in range(0, n):
+        m = []
+        mat.append(m)
+        for j in range(0, n):
+            m.append(int(input("mat[" + str(i) + "," + str(j) + "] = ")))
+        v.append(int(input(" V[" + str(i) + "] = ")))
+    s = upper_diagonalize(mat, v, 0)
+    print("Solutions   ")
+    for i in range(0, n):
+        print(s[i])
+
+
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    solve_t2()
-    solve_t3()
-    solve_t1()
+    #solve_t2()
+    #solve_t3()
+    #solve_t1()
+    solve()
 
